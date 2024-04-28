@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <link rel="icon" href="./Assets/HTM&CSS/Weather_Icons/sunnyIcon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/top.css">
+        <link rel="stylesheet" href="./styles/middle.css">
+        <link rel="stylesheet" href="./styles/bottom.css">
+    </head>
+    <body>
+        <div class="loader">
+            <img src="./Assets/HTM&CSS/General_Images_&_Icons/loader.svg" alt="" id="loader-gif">
+        </div>
+        <section class="top-section">
+            <div class="back-shade">
+                <div class="forecast">
+                    <div class="forecast-city-image">
+                        <img
+                            id="city-image"
+                            alt="city image"
+                            src="./Assets/HTM&CSS/Icons_for_cities/newyork.svg"
+                        >
+                    </div>
+                    <div class="forecast-select-city">
+                        <div class="forecast-select">
+                            <input list="cities" name="cities" id="forecast-select" spellcheck="false" value="NewYork">
+                            <datalist id="cities">
+                            </datalist>
+                        </div>
+                        <div class="forecast-time-date">
+                            <div class="forecast-time">
+                                <div class="forecast-hour">_ _:_ _</div>
+                                <div class="forecast-sec">: _ _</div>
+                                <img
+                                    alt=""
+                                    id="forecast-time-meridian"
+                                    src = "./Assets/HTM&CSS/General_Images_&_Icons/amState.svg"
+                                >
+                            </div>
+                            <div class="forecast-date">1-Apr-2020</div>
+                        </div>
+                    </div>
+
+                    <div class="forecast-factors">
+                        <div>
+                            <div class="factor factor-left factor-top">
+                                <div class="factor-title">Temp &degC</div>
+                                <div id="factor-temp-c">23 C</div>
+                            </div>
+                            <div></div>
+                            <div class="factor factor-left">
+                                <div class="factor-title">Temp &degF</div>
+                                <div id="factor-temp-f">73 F</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="factor factor-right factor-top">
+                                <div class="factor-title">Humidity</div>
+                                <div id="factor-humidity">52 %</div>
+                            </div>
+                            <div class="factor factor-right">
+                                <div class="factor-title">Precipitation</div>
+                                <div id="factor-precipitate">46 %</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="forecast-timeline">
+                        <div class="timeline-box">
+                            <div class="timeline-time">NOW</div>
+                            <div class="timeline-pipe">|</div>
+                            <div class="timeline-icon">
+                                <img
+                                    src="./Assets/HTM&CSS/Weather_Icons/cloudyIcon.svg"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="timeline-temp">23</div>
+                        </div>
+                        <div class="timeline-box grey">
+                            <div></div>
+                            <div class="timeline-pipe grey-pipe">|</div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-time">2 AM</div>
+                            <div class="timeline-pipe">|</div>
+                            <div class="timeline-icon">
+                                <img
+                                    src="./Assets/HTM&CSS/Weather_Icons/windyIcon.svg"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="timeline-temp">18</div>
+                        </div>
+                        <div class="timeline-box grey">
+                            <div></div>
+                            <div class="timeline-pipe grey-pipe">|</div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-time">3 AM</div>
+                            <div class="timeline-pipe">|</div>
+                            <div class="timeline-icon">
+                                <img
+                                    src="./Assets/HTM&CSS/Weather_Icons/windyIcon.svg"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="timeline-temp">20</div>
+                        </div>
+                        <div class="timeline-box grey">
+                            <div></div>
+                            <div class="timeline-pipe grey-pipe">|</div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-time">4 AM</div>
+                            <div class="timeline-pipe">|</div>
+                            <div class="timeline-icon">
+                                <img
+                                    src="./Assets/HTM&CSS/Weather_Icons/windyIcon.svg"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="timeline-temp">18</div>
+                        </div>
+                        <div class="timeline-box grey">
+                            <div></div>
+                            <div class="timeline-pipe grey-pipe">|</div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-time">5 AM</div>
+                            <div class="timeline-pipe">|</div>
+                            <div class="timeline-icon">
+                                <img
+                                    src="./Assets/HTM&CSS/Weather_Icons/rainyIcon.svg"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="timeline-temp">17</div>
+                        </div>
+                        <div class="timeline-box grey">
+                            <div></div>
+                            <div class="timeline-pipe grey-pipe">|</div>
+                        </div>
+                        <div class="timeline-box">
+                            <div class="timeline-time">6 AM</div>
+                            <div class="timeline-pipe">|</div>
+                            <div class="timeline-icon">
+                                <img
+                                    src="./Assets/HTM&CSS/Weather_Icons/rainyIcon.svg"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="timeline-temp">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <section class="middle-section">
+                <div class="preference-select">
+                    <div class="preference-text">Top cities around world</div>
+                    <div class="preference-icons-container">
+                        <div class="preference-icons">
+                            <div>
+                                <img src="./Assets/HTM&CSS/Weather_Icons/sunnyIcon.svg" alt="sunny" id="preference-sunny">
+                            </div>
+                            <div>
+                                <img src="./Assets/HTM&CSS/Weather_Icons/snowflakeIcon.svg" alt="snow" id="preference-snowflake">
+                            </div>
+                            <div>
+                                <img src="./Assets/HTM&CSS/Weather_Icons/rainyIcon.svg" alt="rain" id="preference-rainy">
+                            </div>
+                            <div>Display Top</div>
+                            <div>
+                                <input type="number" min="3" max="10" value="5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section">
+                    <img src="./Assets/HTM&CSS/General_Images_&_Icons/scrollArrowLeft.svg" alt="" class="cards-arrow">
+                    <div class="cards-container">
+                    </div>
+                    <img src="./Assets/HTM&CSS/General_Images_&_Icons/scrollArrowRight.svg" alt="" class="cards-arrow">
+                </div>
+            </section>
+            <section class="bottom-section">
+                <div class="bottom-head">
+                    <div class="bottom-head-text">Cities across continents at a Glance</div>
+                    <div class="bottom-head-sort">
+                        <div class="sort-continent">
+                            <span class="sort-continent-text" style="margin-right:10px;">Continent Name</span>
+                            <img src="./Assets/HTM&CSS/General_Images_&_Icons/arrowUp.svg" alt="" class="ascend sort-continent-arrow ">
+                        </div>
+                        <div class="sort-temp">
+                            <span class="sort-temp-text" style="margin-right:10px;">Temperature</span>
+                            <img src="./Assets/HTM&CSS/General_Images_&_Icons/arrowUp.svg" alt="" class="ascend sort-temp-arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="tile-container">
+                </div>
+            </section>
+        </section>
+        <script src="./scripts/index.js" type="module"></script>
+    </body>
+</html>

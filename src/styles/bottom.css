@@ -1,0 +1,236 @@
+/* styling for entire bottom section */
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+    width: 90vw;
+}
+
+/* styling for heading section for bottom */
+.bottom-head {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* styling for heading text */
+.bottom-head-text {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+/* style for sorting options */
+.bottom-head-sort {
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    font-weight: 300;
+    justify-content: space-between;
+    width: 415px;
+}
+
+/* for every div inside sorting options */
+.bottom-head-sort div {
+    align-items: center;
+    display: flex;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.bottom-head-sort div:hover {
+    transform: scale(1.07);
+    transition: all 0.07s ease;
+}
+
+.bottom-head-sort div:active {
+    transform: scale(1.04);
+    transition: all 0.02s ease;
+}
+
+/* for images inside sorting options */
+.bottom-head-sort img {
+    height: 27px;
+    transition: all 50ms;
+    width: auto;
+}
+
+.descend {
+    transform: rotate(180deg);
+}
+
+.descend:hover {
+    transform: rotate(180deg) scale(1.2);
+    transition: all 100ms;
+}
+
+.ascend:hover {
+    transform: scale(1.2);
+    transition: all 100ms;
+}
+
+/* big box for all the tiles to be contained in */
+.tile-container {
+    display: grid;
+    grid-row-gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-top: 50px;
+}
+
+/* styling for each tile */
+.tile {
+    background-color: #2e2e2e;
+    display: flex;
+    height: 85px;
+    justify-content: space-between;
+    max-width: 370px;
+    min-width: 310px;
+    padding: 10px;
+    transition: all 0.07s ease;
+    width: 25vw;
+}
+
+/* style for when tile is hovered */
+.tile:hover {
+    box-shadow: rgb(255 255 255 / 15%) 3px 3px 3px;
+    transform: scale(1.05);
+    transition: all 0.07s ease;
+}
+
+/* for continent,city an time */
+.tile-city-details {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    justify-content: space-between;
+}
+
+/* for temperature and humidity */
+.tile-factors {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 79px;
+    justify-content: space-between;
+}
+
+/* for only the continent name */
+.tile-continent {
+    color: #fff461;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* for city and time */
+.tile-city-time {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+/* for temperature */
+.tile-temp {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* for humidity */
+.tile-humidity {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* for image of humidity */
+.tile-humidity-img {
+    height: 21px;
+    margin-right: 4px;
+}
+
+/* media for bottom head */
+
+/* media for width<=1150px for card container */
+@media (width<=1150px) {
+    .tile-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tile {
+        width: 35vw;
+    }
+
+    .tile-continent {
+        font-size:18px;
+    }
+
+    .tile-city-time {
+        font-size:19px;
+    }
+
+    .tile-temp {
+        font-size:26px;
+    }
+
+    .tile-humidity {
+        font-size:18px;
+    }
+}
+
+/* media for width<=1060px this is for bottom-head only */
+@media (width<=1060px) {
+    .bottom-head {
+        align-items: center;
+        flex-direction: column;
+        height: 80px;
+        width: fit-content;
+    }
+
+    .bottom-head-sort {
+        width: 100%;
+    }
+
+    .tile-continent {
+        font-size:17px;
+    }
+
+    .tile-city-time {
+        font-size:18px;
+    }
+
+    .tile-temp {
+        font-size:25px;
+    }
+
+    .tile-humidity {
+        font-size:17px;
+    }
+}
+
+/* media for smaller card container */
+@media (width<=770px) {
+    .tile-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tile {
+        width: 45vw;
+    }
+
+    .tile-continent {
+        font-size:16px;
+    }
+
+    .tile-city-time {
+        font-size:17px;
+    }
+
+    .tile-temp {
+        font-size:24px;
+    }
+
+    .tile-humidity {
+        font-size:16px;
+    }
+}
